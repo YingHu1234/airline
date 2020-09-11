@@ -17,14 +17,12 @@ The objective of this project is to identify the most important issues faced by 
 
 ## 📝 Table of Contents
 - [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [Data Clearning](#data_leaning)
+- [Classification](#classification)
+- [Chunking](#chunking)
+- [Topic_modeling](#topic_modeling)
+- [Conclusion](#conclusion)
+
 
 ## 🧐 About <a name = "about"></a>
 The investigation is done through data analysis by using Python scripts. First, data cleaning is performed to narrow down the dataset to three major airline companies for analysis purpose. Then, data accuracy and classification are done using three methods: confusion matrix, Naïve Bayes, and Decision Tree. Lastly, results are analyzed and compared using Chunking, Word Cloud, and Topic Modeling.  
@@ -33,13 +31,9 @@ The investigation is done through data analysis by using Python scripts. First, 
 ### Prerequisites
 SQL, Tableau, Python or Jupyter Notebook 
 
-```
-Give examples
-```
 
-## 🏁 Getting Started <a name = "getting_started"></a>
 ## 🔖 Data Cleaning <a name = "data_leaning"></a>
-Data Cleaning
+
 The dataset shown in Figure 1 is downloaded from Kaggle.com.; There are a total of 14 columns, 27284 lines, and no null values. In this dataset, the top 3 of the company are chosen for analysis. They are Air Canada Rouge, British Airways, and United Airlines.
 
 ![image](https://github.com/YingHu1234/airline/blob/master/img/1.PNG)
@@ -48,45 +42,62 @@ Before the analysis, I used python NLTK, SQL and Tableau to checked the overall 
 shows that the word “good” appeared the most in customer reviews, which has almost 16,000 counts.  
 
 ![image](https://github.com/YingHu1234/airline/blob/master/img/2.PNG)
+
+SQL：
 ![image](https://github.com/YingHu1234/airline/blob/master/img/SQL1.PNG)
 ![image](https://github.com/YingHu1234/airline/blob/master/img/SQL2.PNG)
+
+Tableau:
 ![image](https://github.com/YingHu1234/airline/blob/master/img/T-dashboard.PNG)
 
-## 🔧 Running the tests <a name = "tests"></a>
-Explain how to run the automated tests for this system.
+## 🌱 Classification <a name = "classification"></a>
+1. To begin, two attributes are extracted from data frame: content and recommended. Then, the reviews are converted to a list of a list.
 
-### Break down into end to end tests
-Explain what these tests test and why
+![image](https://github.com/YingHu1234/airline/blob/master/img/3.PNG)
 
-```
-Give an example
-```
 
-### And coding style tests
-Explain what these tests test and why
+2. Here are the object sets for each airline, which are lists of tuples. The review contents are broken down into individual words, and these words are labeled as neg or pos. Adjustives are selected for analysis only to eliminate background noise words.
 
-```
-Give an example
-```
+Tagged the wrods:
 
-## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
+![image](https://github.com/YingHu1234/airline/blob/master/img/4.PNG)
 
-## 🚀 Deployment <a name = "deployment"></a>
-Add additional notes about how to deploy this on a live system.
 
-## ⛏️ Built Using <a name = "built_using"></a>
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+Extracted Adjustives:
 
-## ✍️ Authors <a name = "authors"></a>
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+![image](https://github.com/YingHu1234/airline/blob/master/img/5.PNG)
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+3. Classification starts after defining each feature set. First, training and testing set are generated at 80/20. Then, Naïve Bayes and Decision Tree are used to compare results and accuracy.
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+![image](https://github.com/YingHu1234/airline/blob/master/img/6.PNG)
+
+
+4. In classification, Naïve Bayes and Decision Tree are used for testing accuracy; and confusion tables are set for visualization of the algorithm. In addition, Chunking and Word Cloud are used to extract informative words from customers’ negative reviews. 
+
+![image](https://github.com/YingHu1234/airline/blob/master/img/7.PNG)
+
+![image](https://github.com/YingHu1234/airline/blob/master/img/8.PNG)
+
+
+## 🍦 Chunking  <a name = "chunking"></a>
+
+From Classification, the most informative word for Air Canada Rouge is “unconformable”. From Chucking and Word Cloud, many customers complained the seat being uncomfortable; they also feel uncomfortable because of limited leg room.
+
+![image](https://github.com/YingHu1234/airline/blob/master/img/9.PNG)
+
+![image](https://github.com/YingHu1234/airline/blob/master/img/10.PNG)
+
+
+## 🌽 Topic Modeling  <a name = "topic_modeling"></a>
+Topic Modeling is also performed to compare with the result done by Chunking. 
+
+![image](https://github.com/YingHu1234/airline/blob/master/img/11.PNG)
+
+![image](https://github.com/YingHu1234/airline/blob/master/img/12.PNG)
+
+![image](https://github.com/YingHu1234/airline/blob/master/img/13.PNG)
+
+
+
+## 🎉 Conclusion <a name = "conclusion"></a>
+In conclusion, this data analysis project has discovered the major customer complaints for the top three airline companies. They are categorized as seat comfortableness, food quality, customer service, and schedule on-time performance. If an airline company can provide comfortable seats, high quality food, exceptional customer service, and on-time schedule performance, then they would receive high customer satisfactions and good reviews, and they would be on the way to becoming a very successful airline company in this competitive industry. 
