@@ -27,6 +27,7 @@ The objective of this project is to identify the most important issues faced by 
 ## 🧐 About <a name = "about"></a>
 The investigation is done through data analysis by using Python scripts. First, data cleaning is performed to narrow down the dataset to three major airline companies for analysis purpose. Then, data accuracy and classification are done using three methods: confusion matrix, Naïve Bayes, and Decision Tree. Lastly, results are analyzed and compared using Chunking, Word Cloud, and Topic Modeling.  
 
+![Working](https://media.giphy.com/media/W1T1DxaxgqQQgdvHvq/giphy.gif)
 
 ### Prerequisites
 SQL, Tableau, Python or Jupyter Notebook 
