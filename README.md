@@ -38,10 +38,19 @@ Give examples
 ```
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
-1. Cleaned data 
+## 🔖 Data Cleaning <a name = "data_leaning"></a>
+Data Cleaning
+The dataset shown in Figure 1 is downloaded from Kaggle.com.; There are a total of 14 columns, 27284 lines, and no null values. In this dataset, the top 3 of the company are chosen for analysis. They are Air Canada Rouge, British Airways, and United Airlines.
 
+![image](https://github.com/YingHu1234/airline/blob/master/img/1.PNG)
 
+Before the analysis, I used python NLTK, SQL and Tableau to checked the overall reviews about the airline industry,
+shows that the word “good” appeared the most in customer reviews, which has almost 16,000 counts.  
 
+![image](https://github.com/YingHu1234/airline/blob/master/img/2.PNG)
+![image](https://github.com/YingHu1234/airline/blob/master/img/SQL1.PNG)
+![image](https://github.com/YingHu1234/airline/blob/master/img/SQL2.PNG)
+![image](https://github.com/YingHu1234/airline/blob/master/img/T-dashboard.PNG)
 
 ## 🔧 Running the tests <a name = "tests"></a>
 Explain how to run the automated tests for this system.
