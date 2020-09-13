@@ -52,9 +52,6 @@ Tableau:
 ![image](https://github.com/YingHu1234/airline/blob/master/img/T-dashboard.PNG)
 
 ## 🌱 Classification <a name = "classification"></a>
-A deeper mining is done to explore why customers give negative reviews. Three attributes are kept for classification and topic modeling, they are airline_name, content, and recommended. Number 0 represents negative reviews and number 1 represents positive reviews.
-
-![image](https://github.com/YingHu1234/airline/blob/master/img1/1.PNG)
 
 
 Here are the total counts of the negative and positive reviews of each airline. United Airlines and Air Canada Rouge have significant higher negative review counts than positive. It is very critical to investigate what causes this result and how to improve it.
@@ -62,12 +59,11 @@ Here are the total counts of the negative and positive reviews of each airline. 
 ![image](https://github.com/YingHu1234/airline/blob/master/img1/2.PNG)
 
 
-A confusion table is created to test the accuracy of the interpretation results. To begin, two attributes are extracted from data frame: content and recommended. Then, the reviews are converted to a list of a list. 
-
+A confusion table is created to test the accuracy of the interpretation results. To begin, two attributes are extracted from data frame: content and recommended. 
 ![image](https://github.com/YingHu1234/airline/blob/master/img1/3.PNG)
 
 
-Here are the object sets for each airline, which are lists of tuples. The review contents are broken down into individual words, and these words are labeled as neg or pos. Adjustives are selected for analysis only to eliminate background noise words.
+The review contents are broken down into individual words, and these words are labeled as neg or pos. Adjustives are selected for analysis only to eliminate background noise words.
 
 
 Tagged the wrods:
@@ -88,11 +84,10 @@ Classification starts after defining each feature set. First, training and testi
 
 
 ## 🌳 Result of classification and confusion table:  <a name = "result"></a>
-In classification, Naïve Bayes and Decision Tree are used for testing accuracy; and confusion tables are set for visualization of the algorithm. In addition, Chunking and Word Cloud are used to extract informative words from customers’ negative reviews. 
+ 
 
 ### Air Canada Rouge: 
-For Air Canada Rouge, the accuracy of the two models are high which is at around 90%. According to the confusion table, five reviews should be negative but prediction shows positive; and eight reviews should be positive but prediction shows negative. The overall accuracy is high and the most informative word for this airline is “unconformable”. From Chucking and Word Cloud, many customers complained the seat being uncomfortable; they also feel uncomfortable because of limited leg room.
- 
+
 
 ![image](https://github.com/YingHu1234/airline/blob/master/img/7.PNG)
 
@@ -108,7 +103,6 @@ For Air Canada Rouge, the accuracy of the two models are high which is at around
 
 ### British AirwaysAir: 
 
-British Airways has an accuracy of 80% from the two models. Nineteen reviews should be negative but prediction shows positive, and twenty six reviews should be positive but predition shows negative. The most informative words for this airline are “awful”, “terrible”, “worst”, “uncomfortable” and “disappointed”. From Chucking and Word Cloud results, customers mainly complained about the seat, food, and schedule delays.
 
 
 ![image](https://github.com/YingHu1234/airline/blob/master/img1/5.PNG)
@@ -119,7 +113,7 @@ British Airways has an accuracy of 80% from the two models. Nineteen reviews sho
 
 
 ### United Airlines: 
-United Airlines has an accuracy of 85% from the two models. 31 reviews should be negative but prediction shows positive, and 40 reviews should be positive but predition shows negative. The overall accuracy is good and the most informative words for this airline are “worst”, “terrible” and “rude”. From Chucking and Word Cloud results, customers mainly complained about the seat, food, and customer service
+
 
 ![image](https://github.com/YingHu1234/airline/blob/master/img1/8.PNG)
 
@@ -136,9 +130,6 @@ Topic Modeling is also performed to compare with the result done by Chunking. Fi
 ![image](https://github.com/YingHu1234/airline/blob/master/img/12.PNG)
 
 
-
-
-The circles shown below represent the corpus, and the distances between the circles represent similarity. For Air Canada Rouge, the main keywords are “seat”, “leg”, and “back”; for British Airways, the main keywords are “seat”, “food”, “time” and “hours”; for United Airline, the main keywords are “seat”, “service”, and “delay”. These words are very similar to previous results done by Chunking and Word Clouds.
 
 
 ### Air Canada Rouge:
