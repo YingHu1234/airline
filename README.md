@@ -138,7 +138,7 @@ Topic Modeling is also performed to compare with the result done by Chunking. Fi
 
 
 
-The circles shown below represent the corpus, and the distances between the circles represent similarity. For Air Canada Rouge, the main keywords are “seat”, “leg”, and “back”; the for British Airways, the main keywords are “seat”, “food”, “time” and “hours”; for United Airline, the main keywords are “seat”, “service”, and “delay”. These words are very similar to previous results done by Chunking and Word Clouds.
+The circles shown below represent the corpus, and the distances between the circles represent similarity. For Air Canada Rouge, the main keywords are “seat”, “leg”, and “back”; for British Airways, the main keywords are “seat”, “food”, “time” and “hours”; for United Airline, the main keywords are “seat”, “service”, and “delay”. These words are very similar to previous results done by Chunking and Word Clouds.
 
 
 ### Air Canada Rouge:
