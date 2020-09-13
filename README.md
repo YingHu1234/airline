@@ -54,17 +54,17 @@ Tableau:
 ## 🌱 Classification <a name = "classification"></a>
 A deeper mining is done to explore why customers give negative reviews. Three attributes are kept for classification and topic modeling, they are airline_name, content, and recommended. Number 0 represents negative reviews and number 1 represents positive reviews.
 
-img1
+![image](https://github.com/YingHu1234/airline/blob/master/img1/1.PNG)
 
 
-the total counts of the negative and positive reviews of each airline. United Airlines and Air Canada Rouge have significant higher negative review counts than positive. It is very critical to investigate what causes this result and how to improve it.
+Here are the total counts of the negative and positive reviews of each airline. United Airlines and Air Canada Rouge have significant higher negative review counts than positive. It is very critical to investigate what causes this result and how to improve it.
 
-img2
+![image](https://github.com/YingHu1234/airline/blob/master/img1/2.PNG)
 
 
 A confusion table is created to test the accuracy of the interpretation results. To begin, two attributes are extracted from data frame: content and recommended. Then, the reviews are converted to a list of a list. 
 
-img3
+![image](https://github.com/YingHu1234/airline/blob/master/img1/3.PNG)
 
 
 Here are the object sets for each airline, which are lists of tuples. The review contents are broken down into individual words, and these words are labeled as neg or pos. Adjustives are selected for analysis only to eliminate background noise words.
@@ -82,7 +82,7 @@ Extracted Adjustives:
 
 Classification starts after defining each feature set. First, training and testing set are generated at 80/20. Then, Naïve Bayes and Decision Tree are used to compare results and accuracy.
 
-img4
+![image](https://github.com/YingHu1234/airline/blob/master/img1/4.PNG)
 
 
 
@@ -110,17 +110,22 @@ For Air Canada Rouge, the accuracy of the two models are high which is at around
 
 British Airways has an accuracy of 80% from the two models. Nineteen reviews should be negative but prediction shows positive, and twenty six reviews should be positive but predition shows negative. The most informative words for this airline are “awful”, “terrible”, “worst”, “uncomfortable” and “disappointed”. From Chucking and Word Cloud results, customers mainly complained about the seat, food, and schedule delays.
 
-img 5
-img 6
-img 7
+
+![image](https://github.com/YingHu1234/airline/blob/master/img1/5.PNG)
+
+![image](https://github.com/YingHu1234/airline/blob/master/img1/6.PNG)
+
+![image](https://github.com/YingHu1234/airline/blob/master/img1/7.PNG)
 
 
 ### United Airlines: 
 United Airlines has an accuracy of 85% from the two models. 31 reviews should be negative but prediction shows positive, and 40 reviews should be positive but predition shows negative. The overall accuracy is good and the most informative words for this airline are “worst”, “terrible” and “rude”. From Chucking and Word Cloud results, customers mainly complained about the seat, food, and customer service
 
-img 8
-img 9
-img 10
+![image](https://github.com/YingHu1234/airline/blob/master/img1/8.PNG)
+
+![image](https://github.com/YingHu1234/airline/blob/master/img1/9.PNG)
+
+![image](https://github.com/YingHu1234/airline/blob/master/img1/10.PNG)
 
 
 ## 🌽 Topic Modeling  <a name = "topic_modeling"></a>
@@ -131,16 +136,24 @@ Topic Modeling is also performed to compare with the result done by Chunking. Fi
 ![image](https://github.com/YingHu1234/airline/blob/master/img/12.PNG)
 
 
+
+
+The circles shown below represent the corpus, and the distances between the circles represent similarity. For Air Canada Rouge, the main keywords are “seat”, “leg”, and “back”; the for British Airways, the main keywords are “seat”, “food”, “time” and “hours”; for United Airline, the main keywords are “seat”, “service”, and “delay”. These words are very similar to previous results done by Chunking and Word Clouds.
+
+
 ### Air Canada Rouge:
+
 ![image](https://github.com/YingHu1234/airline/blob/master/img/13.PNG)
 
 
 ### British AirwaysAir: 
 
-img 11
+![image](https://github.com/YingHu1234/airline/blob/master/img1/11.PNG)
+
 
 ### United Airlines: 
-img 12
+
+![image](https://github.com/YingHu1234/airline/blob/master/img1/12.PNG)
 
 
 
