@@ -27,7 +27,7 @@ The objective of this project is to identify the most important issues faced by 
 ## 🧐 About <a name = "about"></a>
 The investigation is done through data analysis by using Python scripts. First, data cleaning is performed to narrow down the dataset to three major airline companies for analysis purpose. Then, data accuracy and classification are done using three methods: confusion matrix, Naïve Bayes, and Decision Tree. Lastly, results are analyzed and compared using Chunking, Word Cloud, and Topic Modeling.  
 
-![Working](https://media.giphy.com/media/W1T1DxaxgqQQgdvHvq/giphy.gif)
+<img src="https://media.giphy.com/media/W1T1DxaxgqQQgdvHvq/giphy.gif" width="450" />
 
 ### Prerequisites
 SQL, Tableau, Python or Jupyter Notebook 
@@ -42,48 +42,43 @@ The dataset shown below is downloaded from Kaggle.com.; There are a total of 14 
 Before the analysis, I used python NLTK, SQL and Tableau to checked the overall reviews about the airline industry,
 shows that the word “good” appeared the most in customer reviews, which has almost 16,000 counts.  
 
-![image](https://github.com/YingHu1234/airline/blob/master/img/2.PNG)
+<img src="https://github.com/YingHu1234/airline/blob/master/img/2.PNG" width="700" />
 
-SQL：
-![image](https://github.com/YingHu1234/airline/blob/master/img/SQL1.PNG)
-![image](https://github.com/YingHu1234/airline/blob/master/img/SQL2.PNG)
+### SQL：
 
-Tableau:
+<img src="https://github.com/YingHu1234/airline/blob/master/img/SQL1.PNG" width="700" />
+<img src="https://github.com/YingHu1234/airline/blob/master/img/SQL2.PNG" width="700" />
+
+### Tableau:
 ![image](https://github.com/YingHu1234/airline/blob/master/img/T-dashboard.PNG)
 
 ## 🌱 Classification <a name = "classification"></a>
 A deeper mining is done to explore why customers give negative reviews. Three attributes are kept for classification and topic modeling, they are airline_name, content, and recommended. Number 0 represents negative reviews and number 1 represents positive reviews.
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/1.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/1.PNG" width="600" />
 
 Here are the total counts of the negative and positive reviews of each airline. United Airlines and Air Canada Rouge have significant higher negative review counts than positive. It is very critical to investigate what causes this result and how to improve it.
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/2.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/2.PNG" width="600" />
 
 A confusion table is created to test the accuracy of the interpretation results. To begin, two attributes are extracted from data frame: content and recommended. Then, the reviews are converted to a list of a list. 
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/3.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/3.PNG" width="700" />
 
 Here are the object sets for each airline, which are lists of tuples. The review contents are broken down into individual words, and these words are labeled as neg or pos. Adjustives are selected for analysis only to eliminate background noise words.
 
 
 Tagged the wrods:
 
-![image](https://github.com/YingHu1234/airline/blob/master/img/4.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img/4.PNG" width="700" />
 
 Extracted Adjustives:
 
-![image](https://github.com/YingHu1234/airline/blob/master/img/5.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img/5.PNG" width="700" />
 
 Classification starts after defining each feature set. First, training and testing set are generated at 80/20. Then, Naïve Bayes and Decision Tree are used to compare results and accuracy.
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/4.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/4.PNG" width="700" />
 
 
 
@@ -94,47 +89,39 @@ In classification, Naïve Bayes and Decision Tree are used for testing accuracy;
 For Air Canada Rouge, the accuracy of the two models are high which is at around 90%. According to the confusion table, five reviews should be negative but prediction shows positive; and eight reviews should be positive but prediction shows negative. The overall accuracy is high and the most informative word for this airline is “unconformable”. From Chucking and Word Cloud, many customers complained the seat being uncomfortable; they also feel uncomfortable because of limited leg room.
  
 
-![image](https://github.com/YingHu1234/airline/blob/master/img/7.PNG)
+<img src="https://github.com/YingHu1234/airline/blob/master/img/7.PNG" width="700" />
 
+<img src="https://github.com/YingHu1234/airline/blob/master/img/8.PNG" width="700" />
 
-![image](https://github.com/YingHu1234/airline/blob/master/img/8.PNG)
+<img src="https://github.com/YingHu1234/airline/blob/master/img/9.PNG" width="700" />
 
-
-![image](https://github.com/YingHu1234/airline/blob/master/img/9.PNG)
-
-
-![image](https://github.com/YingHu1234/airline/blob/master/img/10.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img/10.PNG" width="700" />
 
 ### British AirwaysAir: 
 
 British Airways has an accuracy of 80% from the two models. Nineteen reviews should be negative but prediction shows positive, and twenty six reviews should be positive but predition shows negative. The most informative words for this airline are “awful”, “terrible”, “worst”, “uncomfortable” and “disappointed”. From Chucking and Word Cloud results, customers mainly complained about the seat, food, and schedule delays.
 
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/5.PNG" width="700" />
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/5.PNG)
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/6.PNG" width="700" />
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/6.PNG)
-
-![image](https://github.com/YingHu1234/airline/blob/master/img1/7.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/7.PNG" width="700" />
 
 ### United Airlines: 
 United Airlines has an accuracy of 85% from the two models. 31 reviews should be negative but prediction shows positive, and 40 reviews should be positive but predition shows negative. The overall accuracy is good and the most informative words for this airline are “worst”, “terrible” and “rude”. From Chucking and Word Cloud results, customers mainly complained about the seat, food, and customer service
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/8.PNG)
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/8.PNG" width="700" />
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/9.PNG)
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/9.PNG" width="700" />
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/10.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/10.PNG" width="700" />
 
 ## 🌽 Topic Modeling  <a name = "topic_modeling"></a>
 Topic Modeling is also performed to compare with the result done by Chunking. First, the review contents are broken into individual words and initialized as a dictionary. Then, a corpus is generated, which is a library of words. Lastly, an LDA model is used to get the weight of each word in the negative reviews.
 
-![image](https://github.com/YingHu1234/airline/blob/master/img/11.PNG)
+<img src="https://github.com/YingHu1234/airline/blob/master/img/11.PNG" width="700" />
 
-![image](https://github.com/YingHu1234/airline/blob/master/img/12.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img/12.PNG" width="700" />
 
 
 
@@ -143,18 +130,16 @@ The circles shown below represent the corpus, and the distances between the circ
 
 ### Air Canada Rouge:
 
-![image](https://github.com/YingHu1234/airline/blob/master/img/13.PNG)
 
+<img src="https://github.com/YingHu1234/airline/blob/master/img/13.PNG" width="700" />
 
 ### British AirwaysAir: 
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/11.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/11.PNG" width="700" />
 
 ### United Airlines: 
 
-![image](https://github.com/YingHu1234/airline/blob/master/img1/12.PNG)
-
+<img src="https://github.com/YingHu1234/airline/blob/master/img1/12.PNG" width="700" />
 
 
 ## 🎉 Conclusion <a name = "conclusion"></a>
